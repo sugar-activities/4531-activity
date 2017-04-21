@@ -1,0 +1,286 @@
+body {
+	background-color: Screen.background-color;
+	color: Text.Primary.color;
+	font-family: sans-serif;
+}
+
+.header {
+	border-bottom-style: solid;
+	border-bottom-color: Color.HoloBlue;
+	border-width: 2px;
+	display: table;
+	padding: 0.75em;
+}
+
+.headerTitle {
+	font-size: Text.Primary.font-size;
+	color: Text.Primary.color;
+}
+
+.pageHeader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	padding: 0;
+	margin: 0;
+	background-color: Screen.background-color;
+	height: 4em;
+	width: 100%;
+}
+
+.headerIconBox {
+	text-align: center;
+	width: 3em;
+	text-decoration: none;
+	outline: 0;
+	color: inherit;
+}
+
+.headerIcon {
+	width: 1.8em;
+	height: 1.8em;
+	padding: 0;
+	margin: 0;
+	border-style: none;
+	vertical-align: middle;
+}
+
+.headerUpButton {
+	height: 1em;
+	padding: 0;
+	margin: 0;
+	border-style: none;
+	vertical-align: middle;
+}
+
+.overflowButton {
+	width: OverflowButton.width;
+	height: OverflowButton.width;
+	padding: 0.5em;
+	margin: 0;
+	border-style: none;
+	text-decoration: none;
+	outline: 0;
+	cursor: pointer;
+	color: inherit;
+	vertical-align: middle;
+	float: right;
+}
+
+.overflowButtonIcon {
+	width: OverflowButton.width;
+	height: OverflowButton.width;
+	padding: 0;
+	margin: 0;
+	border-style: none;
+}
+
+.actionBarMenu {
+	background-color: OverflowMenu.Canvas.background-color;
+}
+
+.actionBarMenuSeparator {
+	height: 1px;
+	margin: 0;
+	border-style: none;
+	background-color: OverflowMenu.Canvas.border-color;
+}
+
+.actionBarMenuButton {
+	border-style: none;
+	text-align: left;
+	font-size: Text.Primary.font-size;
+	color: Text.Primary.color;
+	margin: 0;
+	width: OverflowMenu.Canvas.width;
+	display: table;
+	text-decoration: none;
+	outline: 0;
+}
+
+.actionBarMenuButtonPadding {
+	padding: 1em;
+}
+
+.mainMenuButton {
+	position: fixed;
+	right: 0;
+	top: 0;
+	padding: 0.5em;
+	padding-top: 1.15em;
+	text-decoration: none;
+	outline: 0;
+	color: inherit;
+	width: OverflowButton.width;
+	height: OverflowButton.width;
+}
+
+.option_title {
+	font-size: Text.Primary.font-size;
+}
+
+.option_description {
+	color: Text.Secondary.color;
+}
+
+.content {
+	padding: 4em 1em 1em 1em;
+	height: 100%;
+	background-color: Screen.background-color;
+}
+
+.tight {
+	padding: 0px;
+	margin: 0px;
+}
+
+.checkboxCanvas {
+	float: right;
+	box-shadow: none;
+	height: 2em;
+	margin: 0px;
+	margin-right: 2em;
+	padding: 0px;
+	width: 2em;
+}
+
+button {
+	cursor: pointer;
+}
+
+.listViewButton {
+	border-style: none;
+	text-align: left;
+	font-size: inherit;
+	padding: 0;
+	padding-left: 0.5em;
+	margin: 0;
+	height: 4em;
+	width: 100%;
+	color: inherit;
+	display: table;
+	text-decoration: none;
+	outline: 0;
+}
+
+.listViewBorder {
+	height: 1px;
+	margin: 0;
+	border-style: none;
+	background-color: Color.Gray14;
+}
+
+.contextMenu {
+	position: absolute;
+	z-index: 1;
+	background-color: Dialog.Canvas.background-color;
+}
+
+.dialogWidth {
+	width: Dialog.Canvas.width;
+}
+
+.dialogRadioButtonList {
+	border-style: none;
+	text-align: left;
+	font-size: inherit;
+	padding: 0;
+	padding-left: 0.5em;
+	margin: 0;
+	height: Dialog.Button.height;
+	color: inherit;
+	display: table;
+	text-decoration: none;
+	outline: 0;
+}
+
+/* http://www.jakpsatweb.cz/css/css-vertical-center-solution.html */
+.vertCenter {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.dialogCurtain {
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-color: black;
+	position: fixed;
+	opacity: 0.6;
+	width: 100%;
+	height: 100%;
+}
+
+.dialogWindow {
+	background-color: Dialog.Canvas.background-color;
+	position: absolute;
+	z-index: 2;
+	width: Dialog.Canvas.width;
+}
+
+.dialogHeader {
+	margin: 0em;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	color: Color.HoloBlue;
+}
+
+.dialogButton {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-style: solid;
+	border-width: 1px;
+	border-bottom-width: 0px;
+	border-color: Color.Gray20;
+	width: 50%;
+	height: Dialog.Button.height;
+	color: inherit;
+	display: table;
+	text-align: center;
+	text-decoration: none;
+	outline: 0;
+}
+
+.dialogButtonLeft {
+	float: left;
+	border-left-width: 0px;
+	/* Share the OK button's border, so it doesn't appear double-thick. */
+	border-right-width: 0px;
+}
+
+.dialogButtonRight {
+	float: right;
+	border-right-width: 0px;
+}
+
+.slider {
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.sliderHorizontal {
+	height: 2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+.wide {
+	width: 100%;
+}
+
+.colorChooserSwatch {
+	height: 4em;
+	width: 14em;
+	margin: 1em;
+}
+
+.colorSliderHorizontal {
+	height: 3.2em;
+	margin-bottom: 0.1em;
+	margin-top: 0.1em;
+}
+
+.noWebkitTapHighlight {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
